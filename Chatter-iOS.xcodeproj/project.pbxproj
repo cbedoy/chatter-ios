@@ -15,6 +15,10 @@
 		0B363F2D20D16F3100978BDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F2C20D16F3100978BDA /* main.m */; };
 		0B363F3720D16F3100978BDA /* Chatter_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F3620D16F3100978BDA /* Chatter_iOSTests.m */; };
 		0B363F4220D16F3100978BDA /* Chatter_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F4120D16F3100978BDA /* Chatter_iOSUITests.m */; };
+		0B363F5120D1743700978BDA /* PNController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F5020D1743700978BDA /* PNController.m */; };
+		0B363F5520D1797100978BDA /* BudiesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F5420D1797100978BDA /* BudiesProvider.m */; };
+		0B363F5820D17A2300978BDA /* Buddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F5720D17A2300978BDA /* Buddy.m */; };
+		7DE384F499EEE861584FF6D5 /* Pods_Chatter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A8D5CA77985266BC2535A3 /* Pods_Chatter_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,16 @@
 		0B363F3D20D16F3100978BDA /* Chatter-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chatter-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B363F4120D16F3100978BDA /* Chatter_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chatter_iOSUITests.m; sourceTree = "<group>"; };
 		0B363F4320D16F3100978BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B363F4F20D1743700978BDA /* PNController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNController.h; sourceTree = "<group>"; };
+		0B363F5020D1743700978BDA /* PNController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNController.m; sourceTree = "<group>"; };
+		0B363F5220D176E600978BDA /* PNControllerHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNControllerHandler.h; sourceTree = "<group>"; };
+		0B363F5320D1797100978BDA /* BudiesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudiesProvider.h; sourceTree = "<group>"; };
+		0B363F5420D1797100978BDA /* BudiesProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudiesProvider.m; sourceTree = "<group>"; };
+		0B363F5620D17A2300978BDA /* Buddy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Buddy.h; sourceTree = "<group>"; };
+		0B363F5720D17A2300978BDA /* Buddy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Buddy.m; sourceTree = "<group>"; };
+		18F4162DFB65107B0EB7E32D /* Pods-Chatter-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		93A8D5CA77985266BC2535A3 /* Pods_Chatter_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatter_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61652DF62823ABB0DE88722 /* Pods-Chatter-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE384F499EEE861584FF6D5 /* Pods_Chatter_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01385848AF00723343EF5771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93A8D5CA77985266BC2535A3 /* Pods_Chatter_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0B363F1120D16F2F00978BDA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +108,8 @@
 				0B363F3520D16F3100978BDA /* Chatter-iOSTests */,
 				0B363F4020D16F3100978BDA /* Chatter-iOSUITests */,
 				0B363F1B20D16F2F00978BDA /* Products */,
+				5DDC3611FDF033FA5EC86BE9 /* Pods */,
+				01385848AF00723343EF5771 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +126,9 @@
 		0B363F1C20D16F2F00978BDA /* Chatter-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0B363F5B20D1801800978BDA /* Providers */,
+				0B363F5A20D1801100978BDA /* PNController */,
+				0B363F5920D17FFC00978BDA /* Models */,
 				0B363F1D20D16F2F00978BDA /* AppDelegate.h */,
 				0B363F1E20D16F2F00978BDA /* AppDelegate.m */,
 				0B363F2020D16F2F00978BDA /* ViewController.h */,
@@ -132,6 +160,51 @@
 			path = "Chatter-iOSUITests";
 			sourceTree = "<group>";
 		};
+		0B363F5920D17FFC00978BDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B363F5620D17A2300978BDA /* Buddy.h */,
+				0B363F5720D17A2300978BDA /* Buddy.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B363F5A20D1801100978BDA /* PNController */ = {
+			isa = PBXGroup;
+			children = (
+				0B363F5C20D1803300978BDA /* Protocols */,
+				0B363F4F20D1743700978BDA /* PNController.h */,
+				0B363F5020D1743700978BDA /* PNController.m */,
+			);
+			path = PNController;
+			sourceTree = "<group>";
+		};
+		0B363F5B20D1801800978BDA /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				0B363F5320D1797100978BDA /* BudiesProvider.h */,
+				0B363F5420D1797100978BDA /* BudiesProvider.m */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		0B363F5C20D1803300978BDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0B363F5220D176E600978BDA /* PNControllerHandler.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5DDC3611FDF033FA5EC86BE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D61652DF62823ABB0DE88722 /* Pods-Chatter-iOS.debug.xcconfig */,
+				18F4162DFB65107B0EB7E32D /* Pods-Chatter-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B363F4620D16F3100978BDA /* Build configuration list for PBXNativeTarget "Chatter-iOS" */;
 			buildPhases = (
+				0F98AE2C6FB2B4ADD41EDA28 /* [CP] Check Pods Manifest.lock */,
 				0B363F1620D16F2F00978BDA /* Sources */,
 				0B363F1720D16F2F00978BDA /* Frameworks */,
 				0B363F1820D16F2F00978BDA /* Resources */,
+				B11239A5390E2147CF3A0180 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,14 +332,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F98AE2C6FB2B4ADD41EDA28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chatter-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11239A5390E2147CF3A0180 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B363F1620D16F2F00978BDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B363F5820D17A2300978BDA /* Buddy.m in Sources */,
 				0B363F2220D16F2F00978BDA /* ViewController.m in Sources */,
 				0B363F2D20D16F3100978BDA /* main.m in Sources */,
 				0B363F1F20D16F2F00978BDA /* AppDelegate.m in Sources */,
+				0B363F5520D1797100978BDA /* BudiesProvider.m in Sources */,
+				0B363F5120D1743700978BDA /* PNController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +548,7 @@
 		};
 		0B363F4720D16F3100978BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61652DF62823ABB0DE88722 /* Pods-Chatter-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +566,7 @@
 		};
 		0B363F4820D16F3100978BDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F4162DFB65107B0EB7E32D /* Pods-Chatter-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

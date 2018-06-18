@@ -23,15 +23,23 @@
     
     Channel *channel = [Channel new];
     [channel setName:@"General Room"];
-    [channel setAvatar:@"avatar"];
+    [channel setAvatar:@"https://a0.muscache.com/im/pictures/75756707/5d76182c_original.jpg"];
     [channel setMessage:@"No messages..."];
     
     [[self dataModel] addObject:channel];
     
     channel = [Channel new];
-    [channel setName:@"Fuckin' Room"];
-    [channel setAvatar:@"avatar"];
+    [channel setName:@"Amazi' room"];
+    [channel setAvatar:@"https://a0.muscache.com/im/pictures/828dbfd7-1259-413c-b99e-a9629d06a040.jpg"];
     [channel setMessage:@"Nobody can save me!"];
+    
+    [[self dataModel] addObject:channel];
+    
+    
+    channel = [Channel new];
+    [channel setName:@"Skateboard"];
+    [channel setAvatar:@"https://a0.muscache.com/im/pictures/cbf0efb2-eed7-480f-a5a6-1b5d3c5f0d06.jpg"];
+    [channel setMessage:@"Hello! I love to travel and make new friends. For almost 10 years, I have been skateboarding and longboarding everywhere I go."];
     
     [[self dataModel] addObject:channel];
     

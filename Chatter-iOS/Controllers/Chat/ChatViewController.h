@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SlackTextViewController/SLKTextViewController.h"
 #import "Channel.h"
+#import "PNControllerHandler.h"
 @interface ChatViewController : SLKTextViewController
 @property (nonatomic, strong) Channel *channel;
 @property (nonatomic, strong) id<PNControllerHandler> pnControllerHandler;

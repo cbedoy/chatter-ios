@@ -6,6 +6,7 @@
 //  Copyright © 2018 Carlos Bedoy. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "PNController.h"
 #import "Buddy.h"
 #define PUBLISH_KEY @"sub-c-d3aea19c-4894-11e8-ba5f-36600805f352"
@@ -17,7 +18,9 @@
     self = [super init];
     if (self) {
         PNConfiguration *configuration = [PNConfiguration configurationWithPublishKey:PUBLISH_KEY subscribeKey:SUBSCRIPTION_KEY];
-        [configuration setUUID:@"ios"];
+        
+        NSString *identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        configuration.deviceID = identifier;
         self.client = [PubNub clientWithConfiguration:configuration];
         [self.client addListener:self];
     }

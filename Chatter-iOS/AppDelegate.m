@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "PNController.h"
+#import "BudiesProvider.h"
+#import "ChannelsViewController.h"
+#import "ChatViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,32 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    PNController *controller = [PNController new];
+    [controller setBuddiesProvider:[BudiesProvider new]];
+    
+    ChatViewController *chatViewController = [[ChatViewController alloc] initWithNibName:@"ChatViewController" bundle:[NSBundle mainBundle]];
+    
+    ChannelsViewController *channelsViewController = [[ChannelsViewController alloc] initWithNibName:@"ChannelsViewController" bundle:[NSBundle mainBundle]];
+    channelsViewController.chatViewController = chatViewController;
+    
+    
+    channelsViewController.pnControllerHandler = controller;
+    chatViewController.pnControllerHandler = controller;
+    
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:channelsViewController];
+    
+    _window  = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [_window setRootViewController:_navigationController];
+    [_window setBackgroundColor:[UIColor clearColor]];
+    [_window makeKeyAndVisible];
+    
+    
     // Override point for customization after application launch.
+    //PNController *controller = [PNController new];
+    //[controller setBuddiesProvider:[BudiesProvider new]];
+    
     return YES;
 }
 

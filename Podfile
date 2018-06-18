@@ -7,4 +7,5 @@ inhibit_all_warnings!
   
 target 'Chatter-iOS' do
     pod 'PubNub', '~> 4.0'
+    pod "SlackTextViewController"
 end

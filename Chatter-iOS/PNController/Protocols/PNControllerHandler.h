@@ -10,8 +10,14 @@
 
 @protocol PNControllerHandler <NSObject>
 
+typedef void (^onMessagesReceivedCallback)(NSMutableArray* messages);
+
 - (void)subscribeToChannel:(NSString *)channel;
 - (void)unSubscribeFromChannel:(NSString *)channel;
 - (void)sendMessage:(NSString *)messageText from:(NSString *)from toChannel:(NSString *)channel withBlock:(PNPublishCompletionBlock)block;
+
+- (void)requestHistoryFromChannel:(NSString *)channel withCallback:(onMessagesReceivedCallback)callback;
+
+
 
 @end

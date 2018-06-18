@@ -2,17 +2,21 @@ PODS:
   - PubNub (4.7.8):
     - PubNub/Core (= 4.7.8)
   - PubNub/Core (4.7.8)
+  - SlackTextViewController (1.9.6)
 
 DEPENDENCIES:
   - PubNub (~> 4.0)
+  - SlackTextViewController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - PubNub
+    - SlackTextViewController
 
 SPEC CHECKSUMS:
   PubNub: e483fedbcd68ed554dd48276d8bbe9d9e23199a4
+  SlackTextViewController: b854e62c1c156336bc4fd409c6ca79b5773e8f9d
 
-PODFILE CHECKSUM: 7d516fbc73bfd1d17603570e932a437a437e6b4e
+PODFILE CHECKSUM: 802677da574a7775a0cc84bf311af2d853f2b687
 
 COCOAPODS: 1.5.3

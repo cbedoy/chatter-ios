@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2CCDFB20D78A9200C143ED /* ChannelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2CCDF920D78A9200C143ED /* ChannelsViewController.m */; };
+		0B2CCDFC20D78A9200C143ED /* ChannelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CCDFA20D78A9200C143ED /* ChannelsViewController.xib */; };
+		0B2CCDFF20D7930A00C143ED /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2CCDFE20D7930A00C143ED /* ChatViewController.m */; };
 		0B363F1F20D16F2F00978BDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F1E20D16F2F00978BDA /* AppDelegate.m */; };
-		0B363F2220D16F2F00978BDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F2120D16F2F00978BDA /* ViewController.m */; };
-		0B363F2520D16F2F00978BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B363F2320D16F2F00978BDA /* Main.storyboard */; };
 		0B363F2720D16F3100978BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B363F2620D16F3100978BDA /* Assets.xcassets */; };
 		0B363F2A20D16F3100978BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B363F2820D16F3100978BDA /* LaunchScreen.storyboard */; };
 		0B363F2D20D16F3100978BDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F2C20D16F3100978BDA /* main.m */; };
@@ -18,7 +19,11 @@
 		0B363F5120D1743700978BDA /* PNController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F5020D1743700978BDA /* PNController.m */; };
 		0B363F5520D1797100978BDA /* BudiesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F5420D1797100978BDA /* BudiesProvider.m */; };
 		0B363F5820D17A2300978BDA /* Buddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F5720D17A2300978BDA /* Buddy.m */; };
-		7DE384F499EEE861584FF6D5 /* Pods_Chatter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A8D5CA77985266BC2535A3 /* Pods_Chatter_iOS.framework */; };
+		0B363F6020D231AA00978BDA /* Pods_Chatter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B363F5F20D231AA00978BDA /* Pods_Chatter_iOS.framework */; };
+		0B363F6420D25CFA00978BDA /* ChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F6220D25CFA00978BDA /* ChannelCell.m */; };
+		0B363F6520D25CFA00978BDA /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B363F6320D25CFA00978BDA /* ChannelCell.xib */; };
+		0B363F6920D25F6A00978BDA /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F6820D25F6A00978BDA /* Channel.m */; };
+		0B363F6D20D477CF00978BDA /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B363F6C20D477CF00978BDA /* BaseTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2CCDF820D78A9200C143ED /* ChannelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelsViewController.h; sourceTree = "<group>"; };
+		0B2CCDF920D78A9200C143ED /* ChannelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelsViewController.m; sourceTree = "<group>"; };
+		0B2CCDFA20D78A9200C143ED /* ChannelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelsViewController.xib; sourceTree = "<group>"; };
+		0B2CCDFD20D7930A00C143ED /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		0B2CCDFE20D7930A00C143ED /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		0B363F1A20D16F2F00978BDA /* Chatter-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chatter-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B363F1D20D16F2F00978BDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0B363F1E20D16F2F00978BDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0B363F2020D16F2F00978BDA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B363F2120D16F2F00978BDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0B363F2420D16F2F00978BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B363F2620D16F3100978BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B363F2920D16F3100978BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B363F2B20D16F3100978BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,9 +69,17 @@
 		0B363F5420D1797100978BDA /* BudiesProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudiesProvider.m; sourceTree = "<group>"; };
 		0B363F5620D17A2300978BDA /* Buddy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Buddy.h; sourceTree = "<group>"; };
 		0B363F5720D17A2300978BDA /* Buddy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Buddy.m; sourceTree = "<group>"; };
-		18F4162DFB65107B0EB7E32D /* Pods-Chatter-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		93A8D5CA77985266BC2535A3 /* Pods_Chatter_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatter_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D61652DF62823ABB0DE88722 /* Pods-Chatter-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0B363F5F20D231AA00978BDA /* Pods_Chatter_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Chatter_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B363F6120D25CFA00978BDA /* ChannelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelCell.h; sourceTree = "<group>"; };
+		0B363F6220D25CFA00978BDA /* ChannelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelCell.m; sourceTree = "<group>"; };
+		0B363F6320D25CFA00978BDA /* ChannelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCell.xib; sourceTree = "<group>"; };
+		0B363F6720D25F6A00978BDA /* Channel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		0B363F6820D25F6A00978BDA /* Channel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		0B363F6B20D477CF00978BDA /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		0B363F6C20D477CF00978BDA /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		0B363F7120D4787500978BDA /* IModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IModel.h; sourceTree = "<group>"; };
+		1BFD816F58074ED9E4496C17 /* Pods-Chatter-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2B190A01E27608F7148EC506 /* Pods-Chatter-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE384F499EEE861584FF6D5 /* Pods_Chatter_iOS.framework in Frameworks */,
+				0B363F6020D231AA00978BDA /* Pods_Chatter_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,12 +108,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01385848AF00723343EF5771 /* Frameworks */ = {
+		0B2CCE0020D8017D00C143ED /* Channels */ = {
 			isa = PBXGroup;
 			children = (
-				93A8D5CA77985266BC2535A3 /* Pods_Chatter_iOS.framework */,
+				0B2CCDF820D78A9200C143ED /* ChannelsViewController.h */,
+				0B2CCDF920D78A9200C143ED /* ChannelsViewController.m */,
+				0B2CCDFA20D78A9200C143ED /* ChannelsViewController.xib */,
 			);
-			name = Frameworks;
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		0B2CCE0120D8018800C143ED /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0B2CCDFD20D7930A00C143ED /* ChatViewController.h */,
+				0B2CCDFE20D7930A00C143ED /* ChatViewController.m */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		0B363F1120D16F2F00978BDA = {
@@ -108,8 +134,8 @@
 				0B363F3520D16F3100978BDA /* Chatter-iOSTests */,
 				0B363F4020D16F3100978BDA /* Chatter-iOSUITests */,
 				0B363F1B20D16F2F00978BDA /* Products */,
-				5DDC3611FDF033FA5EC86BE9 /* Pods */,
-				01385848AF00723343EF5771 /* Frameworks */,
+				0D5761884534AF0B07B98C7B /* Pods */,
+				C43F3C144D32E1D9DE75E522 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,17 +152,16 @@
 		0B363F1C20D16F2F00978BDA /* Chatter-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0B363F6A20D477AB00978BDA /* Controllers */,
 				0B363F5B20D1801800978BDA /* Providers */,
 				0B363F5A20D1801100978BDA /* PNController */,
 				0B363F5920D17FFC00978BDA /* Models */,
 				0B363F1D20D16F2F00978BDA /* AppDelegate.h */,
 				0B363F1E20D16F2F00978BDA /* AppDelegate.m */,
-				0B363F2020D16F2F00978BDA /* ViewController.h */,
-				0B363F2120D16F2F00978BDA /* ViewController.m */,
-				0B363F2320D16F2F00978BDA /* Main.storyboard */,
 				0B363F2620D16F3100978BDA /* Assets.xcassets */,
 				0B363F2820D16F3100978BDA /* LaunchScreen.storyboard */,
 				0B363F2B20D16F3100978BDA /* Info.plist */,
+				0B363F6620D25D0100978BDA /* Cells */,
 				0B363F2C20D16F3100978BDA /* main.m */,
 			);
 			path = "Chatter-iOS";
@@ -163,8 +188,11 @@
 		0B363F5920D17FFC00978BDA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0B363F7220D478DA00978BDA /* Protocols */,
 				0B363F5620D17A2300978BDA /* Buddy.h */,
 				0B363F5720D17A2300978BDA /* Buddy.m */,
+				0B363F6720D25F6A00978BDA /* Channel.h */,
+				0B363F6820D25F6A00978BDA /* Channel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,13 +224,50 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		5DDC3611FDF033FA5EC86BE9 /* Pods */ = {
+		0B363F6620D25D0100978BDA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D61652DF62823ABB0DE88722 /* Pods-Chatter-iOS.debug.xcconfig */,
-				18F4162DFB65107B0EB7E32D /* Pods-Chatter-iOS.release.xcconfig */,
+				0B363F6120D25CFA00978BDA /* ChannelCell.h */,
+				0B363F6220D25CFA00978BDA /* ChannelCell.m */,
+				0B363F6320D25CFA00978BDA /* ChannelCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0B363F6A20D477AB00978BDA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B2CCE0120D8018800C143ED /* Chat */,
+				0B2CCE0020D8017D00C143ED /* Channels */,
+				0B363F6B20D477CF00978BDA /* BaseTableViewController.h */,
+				0B363F6C20D477CF00978BDA /* BaseTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B363F7220D478DA00978BDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0B363F7120D4787500978BDA /* IModel.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0D5761884534AF0B07B98C7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD816F58074ED9E4496C17 /* Pods-Chatter-iOS.debug.xcconfig */,
+				2B190A01E27608F7148EC506 /* Pods-Chatter-iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C43F3C144D32E1D9DE75E522 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B363F5F20D231AA00978BDA /* Pods_Chatter_iOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,11 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B363F4620D16F3100978BDA /* Build configuration list for PBXNativeTarget "Chatter-iOS" */;
 			buildPhases = (
-				0F98AE2C6FB2B4ADD41EDA28 /* [CP] Check Pods Manifest.lock */,
+				BDD54A3EC65F521C39F6E832 /* [CP] Check Pods Manifest.lock */,
 				0B363F1620D16F2F00978BDA /* Sources */,
 				0B363F1720D16F2F00978BDA /* Frameworks */,
 				0B363F1820D16F2F00978BDA /* Resources */,
-				B11239A5390E2147CF3A0180 /* [CP] Embed Pods Frameworks */,
+				FD0964EA5B108BE335C9C2D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,8 +376,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B363F2A20D16F3100978BDA /* LaunchScreen.storyboard in Resources */,
+				0B363F6520D25CFA00978BDA /* ChannelCell.xib in Resources */,
+				0B2CCDFC20D78A9200C143ED /* ChannelsViewController.xib in Resources */,
 				0B363F2720D16F3100978BDA /* Assets.xcassets in Resources */,
-				0B363F2520D16F2F00978BDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +399,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F98AE2C6FB2B4ADD41EDA28 /* [CP] Check Pods Manifest.lock */ = {
+		BDD54A3EC65F521C39F6E832 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,7 +417,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B11239A5390E2147CF3A0180 /* [CP] Embed Pods Frameworks */ = {
+		FD0964EA5B108BE335C9C2D2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,10 +425,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Chatter-iOS/Pods-Chatter-iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+				"${BUILT_PRODUCTS_DIR}/SlackTextViewController/SlackTextViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlackTextViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -377,11 +445,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B363F5820D17A2300978BDA /* Buddy.m in Sources */,
-				0B363F2220D16F2F00978BDA /* ViewController.m in Sources */,
+				0B363F6D20D477CF00978BDA /* BaseTableViewController.m in Sources */,
 				0B363F2D20D16F3100978BDA /* main.m in Sources */,
+				0B2CCDFF20D7930A00C143ED /* ChatViewController.m in Sources */,
+				0B2CCDFB20D78A9200C143ED /* ChannelsViewController.m in Sources */,
 				0B363F1F20D16F2F00978BDA /* AppDelegate.m in Sources */,
 				0B363F5520D1797100978BDA /* BudiesProvider.m in Sources */,
+				0B363F6920D25F6A00978BDA /* Channel.m in Sources */,
 				0B363F5120D1743700978BDA /* PNController.m in Sources */,
+				0B363F6420D25CFA00978BDA /* ChannelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,14 +489,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0B363F2320D16F2F00978BDA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B363F2420D16F2F00978BDA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0B363F2820D16F3100978BDA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -548,7 +612,7 @@
 		};
 		0B363F4720D16F3100978BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D61652DF62823ABB0DE88722 /* Pods-Chatter-iOS.debug.xcconfig */;
+			baseConfigurationReference = 1BFD816F58074ED9E4496C17 /* Pods-Chatter-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,7 +630,7 @@
 		};
 		0B363F4820D16F3100978BDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18F4162DFB65107B0EB7E32D /* Pods-Chatter-iOS.release.xcconfig */;
+			baseConfigurationReference = 2B190A01E27608F7148EC506 /* Pods-Chatter-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -17,7 +17,7 @@
     self = [super init];
     if (self) {
         PNConfiguration *configuration = [PNConfiguration configurationWithPublishKey:PUBLISH_KEY subscribeKey:SUBSCRIPTION_KEY];
-        [configuration setUUID:@"ios"]
+        [configuration setUUID:@"ios"];
         self.client = [PubNub clientWithConfiguration:configuration];
         [self.client addListener:self];
     }
@@ -90,6 +90,14 @@
     message[@"nickname"] = buddy.nickname;
     
     [[self client] publish:message toChannel:channel withCompletion:block];
+}
+
+- (void)requestHistoryFromChannel:(NSString *)channel withCallback:(onMessagesReceivedCallback)callback{
+    [[self client] historyForChannel:channel withCompletion:^(PNHistoryResult * _Nullable result, PNErrorStatus * _Nullable status) {
+        if (callback != nil) {
+            
+        }
+    }];
 }
 
 @end

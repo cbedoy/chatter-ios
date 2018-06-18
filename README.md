@@ -1,6 +1,20 @@
 # CHATTER
-Basic Objetive - C Implementation PubNub
+Basic Objetive - C Implementation [PubNub](https://www.pubnub.com/)
 
+## How to use
+
+```bash
+git clone git@github.com:cbedoy/chatter-ios.git chatter
+cd chatter
+pod install
+```
+
+Then just open workspace project and having fun.
+
+### Credits
+
+- [SlackViewController](https://github.com/slackhq/SlackTextViewController)
+- [DagM8](https://dagm8.com/)
 # License
 
     Copyright 2018 Carlos Bedoy

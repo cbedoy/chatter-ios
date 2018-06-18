@@ -11,6 +11,6 @@
 @interface ChannelCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *avatarView;
 @property (weak, nonatomic) IBOutlet UILabel *nameView;
-@property (weak, nonatomic) IBOutlet UILabel *messageView;
+@property (weak, nonatomic) IBOutlet UITextView *messageView;
 @property (nonatomic, strong) Channel *channel;
 @end

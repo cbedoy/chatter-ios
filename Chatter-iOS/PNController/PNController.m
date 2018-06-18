@@ -20,7 +20,7 @@
         PNConfiguration *configuration = [PNConfiguration configurationWithPublishKey:PUBLISH_KEY subscribeKey:SUBSCRIPTION_KEY];
         
         NSString *identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        configuration.deviceID = identifier;
+        [configuration setUUID:identifier];
         self.client = [PubNub clientWithConfiguration:configuration];
         [self.client addListener:self];
     }

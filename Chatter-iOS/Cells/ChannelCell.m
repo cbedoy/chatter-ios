@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+    self.messageView.userInteractionEnabled = NO;
     [[[self avatarView] layer] setMasksToBounds:YES];
     [[[self avatarView] layer] setCornerRadius:[[self avatarView] frame].size.height / 2];
 }

@@ -44,6 +44,10 @@
     return 0;
 }
 
+- (void)registerNib:(NSString *)nibString{
+    [[self tableView] registerNib:[UINib nibWithNibName:nibString bundle:nil] forCellReuseIdentifier:nibString];
+}
+
 
 
 @end

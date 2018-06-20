@@ -18,8 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[self tableView] registerNib:[UINib nibWithNibName:@"ChannelCell" bundle:nil] forCellReuseIdentifier:@"ChannelCell"];
-    
+    [self registerNib:@"ChannelCell"];
     
     Channel *channel = [Channel new];
     [channel setName:@"General Room"];
@@ -38,10 +37,12 @@
     [[self dataModel] addObject:channel];
     
     
+    NSString *ide = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    
     channel = [Channel new];
     [channel setName:@"Skateboard"];
     [channel setAvatar:@"https://a0.muscache.com/im/pictures/cbf0efb2-eed7-480f-a5a6-1b5d3c5f0d06.jpg"];
-    [channel setIdentifier:@"skateboard"];
+    [channel setIdentifier:ide];
     [channel setMessage:@"Hello! I love to travel and make new friends. For almost 10 years, I have been skateboarding and longboarding everywhere I go."];
     
     [[self dataModel] addObject:channel];

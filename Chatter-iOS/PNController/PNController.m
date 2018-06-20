@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "PNController.h"
 #import "Buddy.h"
-#define PUBLISH_KEY @"sub-c-d3aea19c-4894-11e8-ba5f-36600805f352"
-#define SUBSCRIPTION_KEY @"pub-c-c4e86432-b754-4913-864a-4ef778860ec0"
+#define PUBLISH_KEY @"pub-c-c4e86432-b754-4913-864a-4ef778860ec0"
+#define SUBSCRIPTION_KEY @"sub-c-d3aea19c-4894-11e8-ba5f-36600805f352"
+@interface PNController()
+@property (nonatomic, strong) id<PNControllerDelegate> delegate;
+@end
 @implementation PNController
 
 - (instancetype)init
@@ -21,6 +24,7 @@
         
         NSString *identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
         [configuration setUUID:identifier];
+        [configuration setStripMobilePayload:NO];
         self.client = [PubNub clientWithConfiguration:configuration];
         [self.client addListener:self];
     }
@@ -42,7 +46,9 @@
         // Message has been received on channel stored in message.data.channel.
     }
     
-    NSLog(@"Received message: %@ on channel %@ at %@", message.data.message[@"msg"],
+    [self.delegate onReceivedMessage:message.data.message];
+    
+    NSLog(@"Received message: %@ on channel %@ at %@", message.data.message[@"raw_message"],
           message.data.channel, message.data.timetoken);
 }
 
@@ -71,11 +77,16 @@
 
 #pragma PNControllerHandler
 
-- (void)subscribeToChannel:(NSString *)channel{
+- (void)subscribeToChannel:(NSString *)channel withDelegate:(Protocol *)delegate{
+  
+    [self setDelegate:delegate];
+    
     [[self client] subscribeToChannels:[NSArray arrayWithObject:channel] withPresence:YES];
 }
 
-- (void)unSubscribeFromChannel:(NSString *)channel{
+- (void)unSubscribeFromChannel:(NSString *)channel withDelegate:(Protocol *)delegate{
+    [self setDelegate:nil];
+
     [[self client] unsubscribeFromChannels:[NSArray arrayWithObject:channel] withPresence:YES];
 }
 
@@ -86,19 +97,20 @@
     
     NSMutableDictionary *message = [NSMutableDictionary dictionary];
     message[@"raw_message"] = messageText;
-    message[@"date"] = [NSDate date];
     message[@"uuid"] = [[NSUUID UUID] UUIDString];
     message[@"from"] = from;
     message[@"avatar"] = buddy.avatar;
     message[@"nickname"] = buddy.nickname;
     
-    [[self client] publish:message toChannel:channel withCompletion:block];
+    
+    [[self client] publish:message toChannel:channel  storeInHistory: YES withCompletion:block];
 }
 
 - (void)requestHistoryFromChannel:(NSString *)channel withCallback:(onMessagesReceivedCallback)callback{
     [[self client] historyForChannel:channel withCompletion:^(PNHistoryResult * _Nullable result, PNErrorStatus * _Nullable status) {
         if (callback != nil) {
-            
+            NSArray *messages = result.data.messages;
+            callback([messages mutableCopy]);
         }
     }];
 }

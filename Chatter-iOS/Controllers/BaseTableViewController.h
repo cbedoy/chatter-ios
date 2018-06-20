@@ -10,4 +10,7 @@
 @interface BaseTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataModel;
+
+- (void)registerNib:(NSString *)nibString;
+
 @end

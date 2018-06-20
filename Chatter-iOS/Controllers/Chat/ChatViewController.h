@@ -10,7 +10,8 @@
 #import "SlackTextViewController/SLKTextViewController.h"
 #import "Channel.h"
 #import "PNControllerHandler.h"
-@interface ChatViewController : SLKTextViewController
+#import "PNControllerHandler.h"
+@interface ChatViewController : SLKTextViewController<PNControllerDelegate, PNControllerDelegate>
 @property (nonatomic, strong) Channel *channel;
 @property (nonatomic, strong) id<PNControllerHandler> pnControllerHandler;
 @end

@@ -12,12 +12,15 @@
 
 typedef void (^onMessagesReceivedCallback)(NSMutableArray* messages);
 
-- (void)subscribeToChannel:(NSString *)channel;
-- (void)unSubscribeFromChannel:(NSString *)channel;
+- (void)subscribeToChannel:(NSString *)channel withDelegate:(Protocol *)delegate;
+- (void)unSubscribeFromChannel:(NSString *)channel withDelegate:(Protocol *)delegate;
 - (void)sendMessage:(NSString *)messageText from:(NSString *)from toChannel:(NSString *)channel withBlock:(PNPublishCompletionBlock)block;
 
 - (void)requestHistoryFromChannel:(NSString *)channel withCallback:(onMessagesReceivedCallback)callback;
 
+@end
 
-
+@protocol PNControllerDelegate <NSObject>
+- (void)onReceivedMessage:(NSDictionary *)message;
+- (NSString *)currentChannel;
 @end

@@ -14,7 +14,7 @@
     return _uuid;
 }
 -(NSInteger)height{
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:15]};
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:14]};
     // NSString class method: boundingRectWithSize:options:attributes:context is
     // available only on ios7.0 sdk.
     
@@ -28,6 +28,10 @@
                                               context:nil];
     
     return rect.size.height + 18 + 36;
+}
+
++ (NSString *) primaryKey{
+    return @"uuid";
 }
 
 @end

@@ -9,4 +9,5 @@ target 'Chatter-iOS' do
     pod 'PubNub', '~> 4.0'
     pod "SlackTextViewController"
     pod 'SDWebImage', '~> 4.0'
+    pod 'Realm', '3.7.4'
 end

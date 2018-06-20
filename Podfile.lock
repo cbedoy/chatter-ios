@@ -1,7 +1,10 @@
 PODS:
-  - PubNub (4.7.8):
-    - PubNub/Core (= 4.7.8)
-  - PubNub/Core (4.7.8)
+  - PubNub (4.8.0):
+    - PubNub/Core (= 4.8.0)
+  - PubNub/Core (4.8.0)
+  - Realm (3.7.4):
+    - Realm/Headers (= 3.7.4)
+  - Realm/Headers (3.7.4)
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
@@ -9,20 +12,23 @@ PODS:
 
 DEPENDENCIES:
   - PubNub (~> 4.0)
+  - Realm (= 3.7.4)
   - SDWebImage (~> 4.0)
   - SlackTextViewController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - PubNub
+    - Realm
     - SDWebImage
     - SlackTextViewController
 
 SPEC CHECKSUMS:
-  PubNub: e483fedbcd68ed554dd48276d8bbe9d9e23199a4
+  PubNub: 80affcdc939808a41f36fad972747dcdf77afe7b
+  Realm: a469bb59e33f9926102ccaea4349822c53b9117e
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   SlackTextViewController: b854e62c1c156336bc4fd409c6ca79b5773e8f9d
 
-PODFILE CHECKSUM: a8a4a36d0df9a08fd932789ed5f692067ae3ba87
+PODFILE CHECKSUM: 1b471fcf45074b936941f68593254b6ff59329bf
 
 COCOAPODS: 1.5.3

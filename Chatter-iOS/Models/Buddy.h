@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "IModel.h"
-@interface Buddy : NSObject<IModel>
+#import <Realm/Realm.h>
+@interface Buddy : RLMObject<IModel>
 
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSString *nickname;

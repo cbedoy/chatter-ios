@@ -101,6 +101,7 @@
     message[@"from"] = from;
     message[@"avatar"] = buddy.avatar;
     message[@"nickname"] = buddy.nickname;
+    message[@"channel"] = channel;
     
     
     [[self client] publish:message toChannel:channel  storeInHistory: YES withCompletion:block];

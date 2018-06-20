@@ -17,4 +17,8 @@
     return 44;
 }
 
++ (NSString *) primaryKey{
+    return @"identifier";
+}
+
 @end

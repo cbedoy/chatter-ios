@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "IModel.h"
-@interface Channel : NSObject<IModel>
+#import <Realm/Realm.h>
+@interface Channel : RLMObject<IModel>
 
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSString *avatar;

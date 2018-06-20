@@ -122,6 +122,7 @@
     [message setAvatar:rawMessage[@"avatar"]];
     [message setNickname:rawMessage[@"nickname"]];
     [message setRawMessage:rawMessage[@"raw_message"]];
+    [message setChannel:rawMessage[@"channel"]];
     
     [[self dataModel] insertObject:message atIndex:0];
     
